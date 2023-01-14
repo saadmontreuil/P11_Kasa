@@ -1,0 +1,31 @@
+.navbarContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+  }
+  
+  .navItem {
+    display: inline-block;
+    padding: 0 20px;
+  }
+  .navLink {
+    color: #ff6060;
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+  }
+  
+  .logo {
+    height: 40px;
+    width: 100px;
+  }
+  
+  
+  @media only screen and (max-width: 443px) {
+    .navItem {
+      padding: 0 0.5rem;
+    }
+    .navLink {
+      font-size: 0.9rem;
+    }
+  }

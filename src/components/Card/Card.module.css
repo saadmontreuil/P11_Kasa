@@ -1,0 +1,68 @@
+.cardContainer {
+    background: #f7f7f7;
+    margin: 3rem;
+    border-radius: 25px;
+    padding: 10px;
+    display: flex;
+  }
+  
+  .cardItem {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5rem;
+  }
+  
+  .cardList {
+    margin: 2rem auto;
+    list-style-type: none;
+    padding-inline-start: unset;
+  }
+  .apartLink {
+    position: relative;
+    height: 20rem;
+    border-radius: 10px;
+  }
+  
+  .apartImage {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 10px;
+    filter: brightness(0.7);
+  }
+  
+  .itemTitle {
+    color: white;
+    width: 10rem;
+    position: relative;
+    top: -7rem;
+    left: 1rem;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  @media only screen and (max-width: 470px) {
+    .apartImage {
+      width: 15rem;
+      height: 15rem;
+    }
+    .apartLink {
+      height: 15rem;
+    }
+  }
+  
+  @media only screen and (max-width: 370px) {
+    .apartImage {
+      width: 10rem;
+      height: 10rem;
+    }
+    .apartLink {
+      height: 10rem;
+    }
+  
+    .itemTitle {
+      width: 6rem;
+      font-size: 0.7rem;
+      top: -4.5rem;
+    }
+  }
+  

@@ -1,0 +1,30 @@
+.bannerContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 225px;
+    overflow: hidden;
+    border-radius: 25px;
+    margin: 0 auto;
+}
+.bannerImage {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    filter: brightness(0.7);
+    border-radius: 25px;
+    width: 90%;
+    height: 225px;
+}
+.bannerTitle{
+    color: white;
+    z-index: 9999;
+    position: absolute;
+    font-family: "Montserrat", sans-serif;
+}
