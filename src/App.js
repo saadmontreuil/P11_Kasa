@@ -5,6 +5,7 @@ import About from './pages/About';
 import Apartement from './pages/Apartement';
 import Error from './pages/Error';
 import Navbar from './components/Navbar/Navbar';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="logement/:id" element={<Apartement/>} />
         <Route path="*" element={<Error/>} />
       </Routes>
+      <Footer/>
     </div>
   );
 }
