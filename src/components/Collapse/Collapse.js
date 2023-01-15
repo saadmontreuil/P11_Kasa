@@ -9,21 +9,23 @@ const Up = <img src={imgup} alt='up'/>
 const Down = <img src={imgdown} alt='down' />
 
 export default function Collapse() {
-    const [open, setOpen] = useState(false);
-    const toggle = () => {
-        setOpen(!open);
-    };
+    const [open, setOpen] = useState(Array(AboutData.length).fill(false));
+    const toggle = (index) => {
+        const newOpen = [...open];
+        newOpen[index] = !newOpen[index];
+        setOpen(newOpen);
+      };
   return (
     <div className={styles.collapseAboutContainer}>
-        {AboutData.map((data)=>{
+        {AboutData.map((data, index)=>{
             return (
                 <div className={styles.collapseApart}  key={data.id}>
                 <div className={styles.item}>
-                    <div className={styles.collapseTitle} onClick={toggle}>
+                    <div className={styles.collapseTitle} onClick={()=>toggle(index)}>
                         <h2>{data.title}</h2>
-                        <span>{open ? Up : Down}</span>
+                        <span>{open[index] ? Up : Down}</span>
                     </div>
-                    <div className={open ? styles.collapseContentShow : styles.collapseContent}>
+                    <div className={open[index] ? styles.collapseContentShow : styles.collapseContent}>
                         {data.content}
                     </div>
                 </div>
