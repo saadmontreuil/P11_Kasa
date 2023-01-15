@@ -4,7 +4,7 @@ import styles from './Footer.module.css'
 
 export default function Footer() {
   return (
-    <div classNamezzzzzzzzzzzzzzzzzz>
+    <div>
       <div className={styles.footerContainer}>
         <div>
             <img src={logo} alt="white Logo" className="K-letter" />

@@ -1,14 +1,13 @@
 import React from 'react'
 import styles from './Banner.module.css'
-import BannerImage from '../../images/banner.png'
 
 
-export default function Banner() {
+export default function Banner(props) {
   return (
     <div className={styles.bannerContainer}>
-        <h1 className={styles.bannerTitle}>Chez vous, partout et ailleurs</h1>
+        <h1 className={styles.bannerTitle}>{props.title}</h1>
         <img
-          src={BannerImage} className={styles.bannerImage} alt="home-background" />
+          src={props.img} className={styles.bannerImage} alt="home-background" />
     </div>
   )
 }
