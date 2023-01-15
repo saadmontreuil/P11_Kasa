@@ -6,18 +6,28 @@ import Apartement from './pages/Apartement';
 import Error from './pages/Error';
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
+import { Outlet } from 'react-router-dom';
+
+const PageLayout = () => (
+  <>
+
+    <Outlet />
+    <Footer />
+  </>
+);
 
 function App() {
   return (
     <div className="App">
-      <Navbar/>
+      <Navbar />
       <Routes>
-        <Route path="/" element={<Home/>} />
-        <Route path="about" element={<About/>} />
-        <Route path="logement/:id" element={<Apartement/>} />
+        <Route path="/" element={<PageLayout />}>
+          <Route path="/" element={<Home/>} />
+          <Route path="about" element={<About/>} />
+          <Route path="logement/:id" element={<Apartement/>} />
+        </Route>
         <Route path="*" element={<Error/>} />
       </Routes>
-      <Footer/>
     </div>
   );
 }
