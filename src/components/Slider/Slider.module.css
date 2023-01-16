@@ -1,0 +1,30 @@
+.slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem auto;
+    border-radius: 25px;
+    position: relative;
+  }
+  
+  .slideImage {
+    width: 90%;
+    height: 415px;
+    border-radius: 25px;
+    object-fit: cover;
+  }
+  
+  .left {
+    position: absolute;
+    top: 50%;
+    left: 10rem;
+    cursor: pointer;
+  }
+  
+  .right {
+    position: absolute;
+    top: 50%;
+    right: 10rem;
+    cursor: pointer;
+  }
+  
