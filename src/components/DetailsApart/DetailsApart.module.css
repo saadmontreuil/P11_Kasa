@@ -1,0 +1,100 @@
+.apartContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 6rem;
+  }
+  
+  .apartDetails {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .apartTitle {
+    color: #ff6060;
+    font-size: 2rem;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  .apartLocation {
+    font-size: 1rem;
+    color: #ff6060;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  .apartTags {
+    color: white;
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+  }
+  .tag {
+    background: #ff6060;
+    margin: 0.8rem 0;
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  .apartRating {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .hostContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .hostProfil {
+    border-radius: 50%;
+    height: 64px;
+    width: 64px;
+  }
+  
+  .hostName {
+    width: 93px;
+    width: 52px;
+    font-size: 18px;
+    color: #ff6060;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  .hostRating {
+    margin: 1rem 0;
+  }
+  
+  @media only screen and (max-width: 1155px) {
+    .apartContainer {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .apartDetails {
+      justify-content: center;
+      align-items: center;
+    }
+    .apartTags {
+      justify-content: center;
+      align-items: center;
+    }
+    .apartTitle {
+      text-align: center;
+    }
+  }
+  
+  @media only screen and (max-width: 735px) {
+    .apartTags {
+      flex-direction: column;
+      width: 40%;
+    }
+  }
+  
