@@ -4,6 +4,7 @@ import logo from '../../images/Logo.svg'
 import styles from './Navbar.module.css'
 
 export default function Navbar() {
+
   return (
     <nav>
       <div className={styles.navbarContainer}>

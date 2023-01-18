@@ -5,9 +5,9 @@ import imgright from '../../images/right.svg'
 import { useState } from 'react'
 
 
-export default function Slider(props) {
+export default function Slider({pictures}) {
     const [current, setCurrent] = useState(0);
-  const length = props.pictures.length;
+  const length = pictures.length;
 
   const prev = () => {
     setCurrent(current === 0 ? length - 1 : current - 1);
@@ -17,9 +17,21 @@ export default function Slider(props) {
   };
   return (
     <div className={styles.slider}>
-      <img src={props.pictures[current]} className={styles.slideImage} alt="slides" />
-      <img className={styles.left} onClick={prev} src={imgleft} alt='left'/>
-      <img className={styles.right} onClick={next} src={imgright} alt='right'/>
+      <img src={pictures[current]} className={styles.slideImage} alt="slides" />
+      {pictures.length > 1 ? (
+        <>
+          <img className={styles.left} onClick={prev} src={imgleft} alt='left'/>
+          <img className={styles.right} onClick={next} src={imgright} alt='right'/>
+          <ul className={styles.bullets}>
+            {pictures.map((_, index) => (
+              <li key={index} className={current === index ? styles.active : null} />
+            ))}
+          </ul>
+          <div className={styles.slideNumber}>
+            {current + 1}/{length}
+          </div>
+        </>
+      ) : null}
     </div>
   )
 }

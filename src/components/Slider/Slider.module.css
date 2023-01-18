@@ -16,15 +16,53 @@
   
   .left {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 10rem;
     cursor: pointer;
   }
   
   .right {
     position: absolute;
-    top: 50%;
+    top: 40%;
     right: 10rem;
     cursor: pointer;
   }
-  
+  .bullets{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+  }
+
+  .bullets li {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: #ff6060;
+    z-index: 10;
+    border-radius: 50%;
+    margin-right: 8px;
+  }
+
+  .bullets li.active {
+    background-color: #fff;
+  }
+
+  .slideNumber{
+    position: absolute;
+    bottom: 50px;
+    font-weight: 500;
+    left: 50%;
+    transform: translateX(-13%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    
+  }

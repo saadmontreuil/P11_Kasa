@@ -5,27 +5,31 @@ import Slider from '../components/Slider/Slider';
 import Collapse from '../components/Collapse/Collapse';
 import styles from '../components/Collapse/Collapse.module.css';
 import DetailsApart from '../components/DetailsApart/DetailsApart';
+import { useEffect } from 'react';
 
 
 export default function Apartement() {
   const { id } = useParams();
   const apart = Data.find((item) => item.id === id);
   
-  const equipment = apart.equipments.map((item) => (
-    <div key={item}>{item}</div>
-  ))
-
-  console.log(apart.equipments);
+  useEffect(() => {
+    document.title = apart.title;  
+  });
   
 
-  if (!apart) return <Navigate to="/ERROR" />;
+  if (!apart){
+
+    return <Navigate to="/404" />;
+  }
   return (
     <>
     <Slider pictures={apart.pictures} />
     <DetailsApart apart={apart} />
     <div className={styles.collapseContainer}>
     <Collapse title="Description" content={apart.description} />
-    <Collapse title="Equipements" content={equipment} />
+    <Collapse title="Equipements" content={apart.equipments.map((item) => (
+      <div key={item}>{item}</div>
+    ))} />
     </div>
 
     </>

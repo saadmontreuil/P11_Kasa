@@ -16,6 +16,12 @@
     font-size: 1.5rem;
   }
   
+  .navLinkIn {
+    color: #ff6060;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem;
+  }
+
   .logo {
     height: 60px;
     width: 150px;

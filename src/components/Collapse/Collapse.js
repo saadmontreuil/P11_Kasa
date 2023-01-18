@@ -7,20 +7,21 @@ import imgdown from '../../images/down.svg'
 const Up = <img src={imgup} alt='up'/>
 const Down = <img src={imgdown} alt='down' />
 
-export default function Collapse(props) {
+export default function Collapse({title, content}) {
+
     const [open, setOpen] = useState(false);
     const toggle = () => {
         setOpen(!open);
     };
   return (
-            <div className={styles.collapseApart}  key={props.id}>
+            <div className={styles.collapseApart} >
                 <div className={styles.item}>
                     <div className={styles.collapseTitle} onClick={toggle}>
-                        <h2>{props.title}</h2>
+                        <h2>{title}</h2>
                         <span>{open ? Up : Down}</span>
                     </div>
                     <div className={open ? styles.collapseContentShow : styles.collapseContent}>
-                        {props.content}
+                        {content}
                     </div>
                 </div>
             </div>
