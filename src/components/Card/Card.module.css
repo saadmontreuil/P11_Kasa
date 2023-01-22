@@ -50,7 +50,7 @@
     }
   }
   
-  @media only screen and (max-width: 370px) {
+  /* @media only screen and (max-width: 370px) {
     .apartImage {
       width: 10rem;
       height: 10rem;
@@ -65,4 +65,13 @@
       top: -4.5rem;
     }
   }
-  
+   */
+
+   @media only screen and (max-width: 371px) {
+
+    .cardContainer{
+      margin: 0;
+    }
+
+
+   }

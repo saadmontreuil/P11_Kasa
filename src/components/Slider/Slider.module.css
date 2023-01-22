@@ -66,3 +66,43 @@
     color: rgb(255, 255, 255);
     
   }
+
+  @media only screen and (max-width: 769px) {
+
+    .left{
+      left: 4rem;
+      width: 34px;
+    }
+    .right{
+      right: 4rem;
+      width: 34px;
+    }
+    .slideNumber{
+      font-size: 25px;
+    }
+    .slideImage{
+      height: 415px
+    }
+    .bullets li{
+      width: 10px;
+      height: 10px;
+      margin-right: 5px;
+    }
+    
+  }
+  @media only screen and (max-width: 769px) {
+    .slideImage{
+      height: 300px
+    }
+    .left{
+      left: 3rem;
+      width: 22px;
+      top: 44%;
+    }
+    .right{
+      right: 3rem;
+      width: 22px;
+      top: 44%;
+    }
+
+  }

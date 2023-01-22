@@ -14,12 +14,13 @@
     font-family: "Montserrat", sans-serif;
     text-decoration: none;
     font-size: 1.5rem;
+    font-weight: 500;
+    white-space: nowrap;
   }
   
-  .navLinkIn {
-    color: #ff6060;
-    font-family: "Montserrat", sans-serif;
-    font-size: 1.5rem;
+  .navLink.active {
+    text-decoration: underline;
+
   }
 
   .logo {
@@ -27,12 +28,39 @@
     width: 150px;
   }
   
+  .links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
   
   @media only screen and (max-width: 443px) {
+    .navbarContainer {
+      padding: 0 1rem;
+    }
     .navItem {
       padding: 0 0.5rem;
     }
     .navLink {
       font-size: 0.9rem;
+    }
+
+    .navItem {
+      padding: 0 0.5rem;
+    }
+    .navLink {
+      font-size: 0.9rem;
+    }
+
+  }
+  @media only screen and (max-width: 376px) {
+    .links {
+      font-size: 0.8rem;
+    }
+    .links{
+      padding-left: 0px;
+    }
+    .logo{
+      width: 111px
     }
   }

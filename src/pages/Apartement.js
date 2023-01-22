@@ -28,7 +28,7 @@ export default function Apartement() {
     <div className={styles.collapseContainer}>
     <Collapse title="Description" content={apart.description} />
     <Collapse title="Equipements" content={apart.equipments.map((item) => (
-      <div key={item}>{item}</div>
+      <div className={styles.itemEquip} key={item}>{item}</div>
     ))} />
     </div>
 

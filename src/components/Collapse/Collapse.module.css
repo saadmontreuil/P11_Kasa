@@ -4,9 +4,14 @@
   }
   
   .collapseApart {
-    width: 42%;
+    width: 74%;
     height: 100%;
     margin: 2rem auto;
+  }
+
+  .collapseContainer .collapseApart{
+    margin-left: 35px;
+    margin-right: 35px;
   }
   
   .item {
@@ -26,7 +31,9 @@
     cursor: pointer;
     font-family: "Montserrat", sans-serif;
   }
-  
+  .itemEquip{
+    margin-bottom: 7px;
+  }
   .collapseTitle {
     color: #fff;
     display: flex;
@@ -85,6 +92,11 @@
     .collapseContent.show {
       text-align: center;
     }
+    .collapseContainer{
+      margin-left: 0px;
+      margin-right: 0px;
+      margin: 2rem 6rem;
+    }
   }
   
   @media only screen and (max-width: 536px) {
@@ -92,4 +104,21 @@
       font-size: 0.7rem;
     }
   }
+  @media only screen and (max-width: 426px) {
+    .collapseTitle {
+      font-size: 0.8rem;
+    }
+    .collapseContainer{
+      margin: 2rem 1rem
+    }
+    .collapseContainer .collapseApart{
+      margin-top: 0px;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      margin-right: 0px;
+      width: 91%
+    }
+
+  }
+  
   

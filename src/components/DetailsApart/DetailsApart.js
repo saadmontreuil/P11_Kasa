@@ -30,7 +30,7 @@ export default function DetailsApart({apart}) {
           <img className={styles.hostProfil} alt="apartement" src={apart.host.picture} />
         </div>
         <div className={styles.hostRating}>
-          <div className="stars">
+          <div className={styles.stars}>
             {stars.map((unused, i) => (
 
             <img key={i} src={apart.rating > i ? RedStar : GreyStar} alt="star" />
