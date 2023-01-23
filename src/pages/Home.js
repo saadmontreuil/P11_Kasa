@@ -20,7 +20,7 @@ export default function Home() {
           <li className={styles.cardItem}>
             {Data.map((item) => {
               return (
-                <Card id={item.id} title={item.title} cover={item.cover} />
+                <Card key={item.id} id={item.id} title={item.title} cover={item.cover} />
               );
             })}
           </li>
