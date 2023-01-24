@@ -30,12 +30,41 @@
     font-size: 48px;
 }
 
-@media only screen and (max-width: 376px) {
+@media only screen and (max-width: 1025px) {
+    .bannerTitle {
+        font-size: 36px;
+        text-align: left;
+    }
+
+  }
+  @media only screen and (max-width: 768px) {
+    .bannerTitle {
+        font-size: 32px;
+    }
+
+  }
+@media only screen and (max-width: 559px) {
     .bannerTitle {
       font-size: 24px;
       text-align: left;
     }
-    .links{
-        padding-left: 0px;
-    }
+
   }
+
+  @media only screen and (max-width: 425px) {
+    .bannerTitle {
+      font-size: 24px;
+      text-align: left;
+      width: 53%;
+      position: absolute;
+      left: 10%;
+      font-weight: 500%;
+    }
+    .bannerImage {
+        height: 166px
+    }
+    
+
+
+  }
+

@@ -52,13 +52,13 @@
   }
 }
 
-@media only screen and (max-width: 356px) {
+@media only screen and (max-width: 375px) {
   .letter404 {
     font-size: 7rem;
   }
 
   .message404 {
-    font-size: 0.8rem;
+    font-size: 20px;
   }
 
   .backHome {

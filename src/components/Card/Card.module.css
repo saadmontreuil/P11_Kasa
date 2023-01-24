@@ -36,6 +36,7 @@
     width: 10rem;
     position: relative;
     top: -7rem;
+    text-align: left;
     left: 1rem;
     font-family: "Montserrat", sans-serif;
   }
@@ -48,6 +49,20 @@
     .apartLink {
       height: 15rem;
     }
+  }
+  @media only screen and (max-width: 425px) {
+    .cardContainer {
+      margin: 1rem;
+      background-color: white;
+    }
+    .apartImage {
+      width: 100%;
+    }
+    .cardList{
+      margin: 0;
+    }
+
+
   }
   
   /* @media only screen and (max-width: 370px) {
