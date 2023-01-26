@@ -13,7 +13,9 @@ export default function Apartement() {
   const apart = Data.find((item) => item.id === id);
   
   useEffect(() => {
+    if (apart){
     document.title = apart.title;  
+    }
   });
   
 

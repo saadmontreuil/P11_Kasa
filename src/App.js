@@ -10,7 +10,6 @@ import { Outlet } from 'react-router-dom';
 
 const PageLayout = () => (
   <>
-
     <Outlet />
     <Footer />
   </>

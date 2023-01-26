@@ -14,7 +14,6 @@ export default function About() {
 
   
   return (
-    console.log(AboutData),
     <>
  
     <Banner img={BannerImage2} />

@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
 
-import { useLocation, Link } from 'react-router-dom'
+import { useLocation, NavLink } from 'react-router-dom'
 import logo from '../../images/Logo.svg'
 import styles from './Navbar.module.css'
 
@@ -25,20 +25,20 @@ export default function Navbar() {
   return (
     <nav>
       <div className={styles.navbarContainer}>
-        <Link to="/" className={styles.navbarLogo}>
+        <NavLink to="/" className={styles.navbarLogo}>
           <img src={logo} alt="Logo" className={styles.logo} />
-        </Link>
+        </NavLink>
 
         <ul className={styles.links}>
           <li className={styles.navItem}>
-            <Link to="/" className={`${styles.navLink} ${active === 'home' ? styles.active : ''}`}>
+            <NavLink to="/" className={`${styles.navLink} ${active === 'home' ? styles.active : ''}`}>
               Accueil
-            </Link>
+            </NavLink>
           </li>
           <li className={styles.navItem}>
-            <Link to="/about" className={`${styles.navLink} ${active === 'about' ? styles.active : ''}`}>
+            <NavLink to="/about" className={`${styles.navLink} ${active === 'about' ? styles.active : ''}`}>
               A Propos
-            </Link>
+            </NavLink>
           </li>
         </ul>
       </div>
